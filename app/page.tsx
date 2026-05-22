@@ -60,12 +60,14 @@ const projects = [
     description:
       "Interactive Go and JavaScript app for climate data visualization with dynamic filters, charts, Docker packaging, and AWS EC2 deployment.",
     tags: ["Go", "JavaScript", "Docker", "AWS EC2"],
+    repo: "https://github.com/bg12345/climate-visualization",
   },
   {
     name: "OCR System",
     description:
       "Python OCR pipeline using OpenCV and Tesseract to extract text from scanned documents.",
     tags: ["Python", "OpenCV", "Tesseract"],
+    repo: "https://github.com/bg12345/OCR",
   },
 ];
 
@@ -241,6 +243,9 @@ export default function Home() {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
+              <a className="repoLink" href={project.repo}>
+                View GitHub repo
+              </a>
             </article>
           ))}
         </div>

@@ -319,6 +319,8 @@ ul {
   border-radius: 8px;
   padding: 28px;
   background: rgba(255, 255, 255, 0.34);
+  display: flex;
+  flex-direction: column;
 }
 
 .tagRow {
@@ -326,6 +328,19 @@ ul {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 22px;
+}
+
+.repoLink {
+  align-self: flex-start;
+  border-bottom: 2px solid var(--amber);
+  color: var(--charcoal);
+  font-weight: 800;
+  margin-top: 24px;
+  padding-bottom: 4px;
+}
+
+.repoLink:hover {
+  color: var(--teal);
 }
 
 .contact {
